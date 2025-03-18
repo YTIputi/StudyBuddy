@@ -1,75 +1,80 @@
 .courses-page {
-    padding: 50px;
-    background-color: #f4f4f4;
-    text-align: center;
-  }
-  
-  .courses-page h1 {
-    font-size: 48px;
-    color: #333;
-    margin-bottom: 50px;
-  }
-  
-  .courses-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  .course-card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .course-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .course-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  .course-card h3 {
-    font-size: 24px;
-    color: #3498db;
-    margin-top: 20px;
-  }
-  
-  .course-card p {
-    font-size: 16px;
-    color: #666;
-    margin-top: 10px;
-  }
-  
-  .price {
-    font-size: 20px;
-    font-weight: bold;
-    color: #27ae60;
-    margin-top: 10px;
-  }
-  
-  .enroll-btn {
-    background-color: #3498db;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s;
-  }
-  
-  .enroll-btn:hover {
-    background-color: #2980b9;
-  }
+padding: 50px;
+background-color: #f4f4f4;
+text-align: center;
+min-height: 100vh; /* Чтобы страница растягивалась на всю высоту */
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.courses-page h1 {
+font-size: 36px; /* Размер шрифта теперь соответствует стилю для .about */
+color: #333;
+margin-bottom: 40px; /* Уменьшено расстояние */
+}
+
+.courses-list {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+}
+
+.course-card {
+background-color: white;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+width: 300px;
+padding: 20px;
+text-align: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+min-height: 380px; /* Чтобы карточки были одинакового размера */
+}
+
+.course-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.course-card img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+border-radius: 8px;
+}
+
+.course-card h3 {
+font-size: 24px;
+color: #3498db;
+margin-top: 20px;
+}
+
+.course-card p {
+font-size: 16px;
+color: #666;
+margin-top: 10px;
+}
+
+.price {
+font-size: 20px;
+font-weight: bold;
+color: #27ae60;
+margin-top: 10px;
+}
+
+.enroll-btn {
+background-color: #3498db;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 20px;
+transition: background-color 0.3s;
+}
+
+.enroll-btn:hover {
+background-color: #2980b9;
+}
   

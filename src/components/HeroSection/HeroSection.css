@@ -4,8 +4,8 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(135deg, #FFC567, #FFC567);
-    color: white;
+    background: white;
+    color: #333;
     text-align: center;
   }
   

@@ -1,18 +1,18 @@
 .about {
     display: flex;
-    flex-direction: column; /* Чтобы элементы шли вертикально */
-    justify-content: center; /* Центрирование по вертикали */
-    align-items: center; /* Центрирование по горизонтали */
-    min-height: 100vh; /* Секция занимает 100% высоты экрана */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
     padding: 50px;
     text-align: center;
-    background-color: #F7CBCA;
+    background-color: #f4f4f4;
 }
 
 .about h2 {
     font-size: 36px;
     color: #333;
-    margin-bottom: 20px; /* Расстояние между заголовком и текстом */
+    margin-bottom: 20px;
 }
 
 .about p {

@@ -7,7 +7,9 @@ import AdvantagesSection from "./components/AdvantagesSection/AdvantagesSection"
 import ReviewsSection from "./components/ReviewsSection/ReviewsSection";
 import Footer from "./components/Footer/Footer";
 import CoursesPage from "./components/CoursesPage/CoursesPage";
-import RegisterPage from "./components/RegisterPage/RegisterPage"; // Импортируем страницу регистрации
+import LoginPage from "./components/LoginPage/LoginPage";
+import SignupPage from "./components/SignupPage/SignupPage";
+
 
 function App() {
     return (
@@ -23,7 +25,8 @@ function App() {
                     </>
                 } />
                 <Route path="/courses" element={<CoursesPage />} />
-                <Route path="/register" element={<RegisterPage />} /> {/* Добавили маршрут */}
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/signup" element={<SignupPage />} />
             </Routes>
             <Footer />
         </Router>

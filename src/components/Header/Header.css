@@ -1,24 +1,70 @@
 .header {
-    background-color: #00995E;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .header nav ul li {
-    display: inline;
-  }
-  
-  .header nav ul li a {
-    color: #ecf0f1;
-    text-decoration: none;
-    font-size: 18px;
-  }
+  background-color: white;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Размещаем блоки слева и справа */
+}
+
+.logo-container {
+  display: flex;
+  justify-content: flex-start; /* Логотип слева */
+}
+
+.logo {
+  height: 40px; /* Устанавливаем подходящий размер для логотипа */
+  width: auto;
+}
+
+nav {
+  position: absolute; /* Абсолютное позиционирование для навигации */
+  left: 50%; /* Размещаем навигацию по центру */
+  transform: translateX(-50%); /* Сдвигаем на 50% от ширины, чтобы центрировать */
+  display: flex;
+}
+
+.header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px; /* Расстояние между ссылками */
+}
+
+.header nav ul li {
+  display: inline;
+}
+
+.header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header nav ul li a.active {
+  text-decoration: underline;
+}
+
+/* Новый контейнер для ссылок Login и Sign Up справа */
+.auth-links {
+  display: flex;
+  gap: 20px; /* Расстояние между ссылками */
+}
+
+.auth-link {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}

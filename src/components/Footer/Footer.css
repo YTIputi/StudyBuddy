@@ -1,8 +1,10 @@
 .footer {
-    background-color: #00995E;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-  }
+  background-color: transparent; /* Прозрачный фон */
+  color: #666; /* Цвет текста */
+  text-align: center;
+  padding: 20px;
+  position: relative; /* Позиционирование футера */
+  bottom: 0;
+  width: 100%; /* Ширина на весь экран */
+  z-index: 10; /* Если футер должен быть поверх других элементов */
+}

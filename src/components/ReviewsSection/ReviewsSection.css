@@ -6,7 +6,7 @@
     min-height: 100vh;
     padding: 50px;
     text-align: center;
-    background-color: #F7CBCA; /* Цвет фона для блока отзывов */
+    background-color: #f4f4f4; /* Цвет фона для блока отзывов */
 }
 
 .reviews h2 {
