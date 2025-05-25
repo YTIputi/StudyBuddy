@@ -1,0 +1,131 @@
+.header {
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header-logo {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--text-light);
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.header-logo:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.header-menu {
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-menu a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    transition: all var(--transition-fast);
+    position: relative;
+}
+
+.header-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: all var(--transition-fast);
+    transform: translateX(-50%);
+}
+
+.header-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header-menu a:hover::after {
+    width: 80%;
+}
+
+.header-button {
+    background-color: var(--accent-color);
+    color: var(--text-light) !important;
+    padding: var(--spacing-sm) var(--spacing-lg) !important;
+    border: none;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all var(--transition-fast);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.header-button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-nav {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        padding: var(--spacing-md) var(--spacing-lg);
+    }
+
+    .header-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--spacing-md);
+    }
+
+    .header-menu a {
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+
+    .header-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-logo {
+        font-size: var(--font-size-xl);
+    }
+
+    .header-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header-menu a {
+        width: 100%;
+        text-align: center;
+    }
+} 
